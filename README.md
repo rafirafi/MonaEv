@@ -31,6 +31,9 @@ user: 2.672000s, sys: 0.636000s, elapsed: 14.695536s, CPU: 22.5%, GPU: 97.1%
 I didn't focus on how the change/mutation are done so a local optimum is relatively quickly reached.  
 I always use the same image when testing, so with a good mutation selection this quality could be reached.
 
+![](https://raw.githubusercontent.com/rafirafi/MonaEv/master/example/mona.png)
+![](https://raw.githubusercontent.com/rafirafi/MonaEv/master/example/mona_result.png)
+
 
 ```
 USAGE: 	monaev --image path --dna path [OPTIONS]
