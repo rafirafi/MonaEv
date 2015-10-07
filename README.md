@@ -11,20 +11,22 @@ Platform : linux (ok), windows (seems ok), darwin (not tested)
 P.ex with an old laptop with intel GMA4500M and 1000 triangles : 
 
 -with 1 slice : 110 changes / seconde
-> $sudo intel_gpu_time ./monaev --image mona.png --slicenb 1 --polyvertexcount 1000,3
-          score   mutation    improv.    neutral child. fitness change/s
-...
-        7823338       1400         56          0     25 75.047  108.52
-        7805378       1525         61          0     25 75.105  108.73
-user: 1.056000s, sys: 0.328000s, elapsed: 14.903300s, CPU: 9.3%, GPU: 97.8%
-
+```
+$sudo intel_gpu_time ./monaev --image mona.png --slicenb 1 --polyvertexcount 1000,3  
+          score   mutation    improv.    neutral child. fitness change/s  
+...  
+        7823338       1400         56          0     25 75.047  108.52  
+        7805378       1525         61          0     25 75.105  108.73  
+user: 1.056000s, sys: 0.328000s, elapsed: 14.903300s, CPU: 9.3%, GPU: 97.8%  
+```
 -with 8 slices : 190 changes / seconde
-> $sudo  intel_gpu_time ./monaev --image mona.png --slicenb 8 --polyvertexcount 1000,3
-          score   mutation    improv.    neutral child. fitness change/s
-...
-        6499518       2600        104          0     25 79.270  188.48
-user: 2.672000s, sys: 0.636000s, elapsed: 14.695536s, CPU: 22.5%, GPU: 97.1%
-
+```
+$sudo  intel_gpu_time ./monaev --image mona.png --slicenb 8 --polyvertexcount 1000,3  
+          score   mutation    improv.    neutral child. fitness change/s  
+...  
+        6499518       2600        104          0     25 79.270  188.48  
+user: 2.672000s, sys: 0.636000s, elapsed: 14.695536s, CPU: 22.5%, GPU: 97.1%  
+```
 
 I didn't focus on how the change/mutation are done so a local optimum is relatively quickly reached.  
 I always use the same image when testing, so with a good mutation selection this quality could be reached.
