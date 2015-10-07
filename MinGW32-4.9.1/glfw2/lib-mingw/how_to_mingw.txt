@@ -1,0 +1,1 @@
+rename glfw3dll.a to glfw3.dll.a

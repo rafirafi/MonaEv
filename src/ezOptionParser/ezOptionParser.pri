@@ -1,0 +1,5 @@
+
+INCLUDEPATH += $${EZOPTIONPARSER_PATH}
+
+HEADERS += \
+    $${EZOPTIONPARSER_PATH}/ezOptionParser.hpp
