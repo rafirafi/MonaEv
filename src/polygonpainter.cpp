@@ -1,5 +1,7 @@
 #include "polygonpainter.h"
 
+#include <inttypes.h>
+
 #include <algorithm>
 #include <chrono>
 
