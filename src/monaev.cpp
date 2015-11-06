@@ -1,6 +1,7 @@
 #include "monaev.h"
 
 #include <stdio.h>
+#include <inttypes.h>
 
 #include "glimageloader.h"
 #include "glprograms.h"
